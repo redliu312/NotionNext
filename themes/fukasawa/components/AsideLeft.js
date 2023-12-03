@@ -66,6 +66,12 @@ function AsideLeft(props) {
                 {siteConfig('DESCRIPTION')}
             </section>
 
+            <section className='flex flex-col'>
+                <div className='w-12 my-4' />
+                <SocialButton />
+                <SiteInfo />
+            </section>
+
             <section className='flex flex-col text-gray-600'>
                 <div className='w-12 my-4' />
                 <MenuList {...props} />
@@ -94,12 +100,6 @@ function AsideLeft(props) {
                 <div className='w-12 my-4' />
                 <GroupCategory categories={categoryOptions} currentCategory={currentCategory} />
             </section>}
-
-            <section className='flex flex-col'>
-                <div className='w-12 my-4' />
-                <SocialButton />
-                <SiteInfo />
-            </section>
 
             <section className='flex justify-center dark:text-gray-200 pt-4'>
                 <DarkModeButton />
